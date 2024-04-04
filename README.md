@@ -1,3 +1,48 @@
+Event Management System
+
+Overview
+This Django project is an Event Management System that allows users to upload event data from a CSV file, search for events based on date, and perform CRUD operations on events via a RESTful API.
+
+Features
+Upload Events: Users can upload event data from a CSV file containing event name, city name, date, time, latitude, and longitude.
+Search Events: Users can search for events based on a specified date range.
+CRUD Operations: Events can be created, read, updated, and deleted through the provided API endpoints.
+
+Setup
+Clone the repository:
+git clone https://github.com/your_username/event-management.git
+
+Install dependencies:
+pip install -r requirements.txt
+
+Apply migrations:
+python manage.py migrate
+
+Run the development server:
+python manage.py runserver
+
+Access the application at http://localhost:8000.
+
+Usage
+Uploading Events
+Navigate to the "Upload Events" page.
+Choose a CSV file containing event data and submit the form.
+
+Searching Events
+Navigate to the "Search Events" page.
+Enter a date range and submit the form to view events within that range.
+
+API Endpoints
+GET /api/events/: Retrieve a list of all events.
+POST /api/events/: Create a new event.
+GET /api/events/{id}/: Retrieve details of a specific event.
+PUT /api/events/{id}/: Update details of a specific event.
+DELETE /api/events/{id}/: Delete a specific event.
+
+
+
+
+
 ![Screenshot (226)](https://github.com/AarugulaVarahalu/Event-Locator/assets/118363042/d2640535-163b-404f-b681-408411fe1399)
 
 
