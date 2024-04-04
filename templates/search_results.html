@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search Results</title>
+</head>
+<body>
+    {% block conent %}
+    <h1>Search Results</h1>
+    <ul>
+        {% for event in events %}
+            <li>{{ event.event_name }} - {{ event.date }}</li>
+        {% endfor %}
+    </ul>
+    {% endblock %}
+</body>
+</html>
