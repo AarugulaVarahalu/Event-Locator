@@ -9,34 +9,48 @@ Search Events: Users can search for events based on a specified date range.
 CRUD Operations: Events can be created, read, updated, and deleted through the provided API endpoints.
 
 Setup
-Clone the repository:
+
+1.Clone the repository:
+
 git clone https://github.com/your_username/event-management.git
 
-Install dependencies:
+2.Install dependencies:
+
 pip install -r requirements.txt
 
-Apply migrations:
+3. Apply migrations:
+
 python manage.py migrate
 
-Run the development server:
+4. Run the development server:
+
 python manage.py runserver
 
-Access the application at http://localhost:8000.
+5. Access the application at http://localhost:8000.
 
 Usage
+
 Uploading Events
+
 Navigate to the "Upload Events" page.
+
 Choose a CSV file containing event data and submit the form.
 
 Searching Events
+
 Navigate to the "Search Events" page.
+
 Enter a date range and submit the form to view events within that range.
 
 API Endpoints
 GET /api/events/: Retrieve a list of all events.
+
 POST /api/events/: Create a new event.
+
 GET /api/events/{id}/: Retrieve details of a specific event.
+
 PUT /api/events/{id}/: Update details of a specific event.
+
 DELETE /api/events/{id}/: Delete a specific event.
 
 
