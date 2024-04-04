@@ -5,7 +5,7 @@ from rest_framework.decorators import api_view
 from rest_framework.response import Response
 import csv
 from .forms import UploadFileForm, DateForm
-import datetime
+import datetime 
 from django.shortcuts import render
 
 from datetime import datetime, timedelta
@@ -38,7 +38,7 @@ def upload_file(request):
                         if len(row) == 6:
                             event_name, city_name, date_str, time, latitude, longitude = row
                             try:
-                                # Parse the date string into a datetime object
+                               
                                 date_obj = datetime.datetime.strptime(date_str, '%d-%m-%Y').date()
                                 event = Event(event_name=event_name, city_name=city_name, date=date_obj, time=time, latitude=latitude, longitude=longitude)
                                 uploaded_data.append(event)
